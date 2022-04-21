@@ -1,0 +1,332 @@
+---
+title:
+output:
+  html_document:
+    df_print: paged
+---
+
+<style type="text/css">
+.main-container {
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 7pt;
+}
+
+.navbar {
+  background-color: #89d2f8;
+}
+
+.navbar .navbar-brand {
+  color: white;
+  font-size: 1.2em;
+}
+.navbar .navbar-nav>li>a {
+  color: white;
+  font-size: 1.2em;
+}
+.active a {
+
+  background-color: #89d2f8 !important;
+
+}
+ }
+ 
+</style>
+
+
+<div style="margin-bottom:30px;">
+</div>
+
+
+
+
+<p>&nbsp;</p>
+
+#### **Session 2 Room LL108A: Causal Inference**
+
+<hr style="border:2px solid gray"> </hr>
+
+##### **Mufeng Xu**
+
+***Association between BMI/WHRadj and Breast Cancer  Subtypes under Mendelian Randomization Methods***
+
+Previous studies have shown a significant association between obesity and the risk of  overall breast cancer. However, this relationship is unclear with regards to breast cancer  subtypes. Here, we performed Mendelian Randomization(MR) analysis to evaluate the  link between body-mass-index(BMI) and BMI-adjusted waist-hip-ratio(WHR  adj  ) and five  breast cancer subtypes - luminal A-like, luminal B-like, luminal B/HER2 negative, HER2  enriched, and triple negative breast cancer.  Mendelian Randomization analyses were  performed, using inverse-variance weighted(IVW), Median-based, MR-Egger models to  assess the association of breast cancer risk and BMI/WHR  adj  . P-value of 0.003 was  selected as the threshold to determine significant association. Luminal A-like breast  cancer risk was found associated with BMI/WHR  adj.
+
+##### **Hangyu Lu**
+
+***Mediation Analysis in CATIE***
+
+This practicum is a continuation of an analysis of the CATIE trialdone by Siyuan Ding and Professor Linda Valeri.  The goal of this studyis to use longitudinal data instead ofa fixedintermediate timepoint to explain antipsychotics effects on quality of lifethrough multiple mediators.  In particular, the study wants to provide preliminary evidence that the lack of difference in quality of life between patients assigned to olanzapine relative perphenazine is due to the complex effects of the treatment on the trajectories of hypothesized mediators on the pathway from treatment to quality of lifeaccounting for treatment switching.  The former researchapplied latent class mixed models modeling3 longitudinal mediatorsseparately.By effectively identifying classes for each mediator, the researchdemonstrated the transformation from longitudinal multiple mediators into multiple categorical mediatorsand compared intent-to-treat(ITT)and per protocol(PP)models.  The analysis revealedthat PANSS(Positive and Negative Syndrome Scale)and weight are potential mediators of the treatment effect on quality of life, while weaker evidence is found for neurological adverse events. The differences occurring between the ITT and PP group and among each latent class proves the importance of the adjustmentfor treatment adherence. For PP group, logistic regression is applied for switch and drop-out to investigate theirrespectiveinteractions with treatment and confounders. The weight usedfor PP group is the product of respective weight of switch and drop-out.As a next step from the previous study, I applymultivariate latent class mixed model by modeling 3 longitudinal mediators instead of fitting separate modelsfor each mediator.  Consequently, the resulting categorical mediator reduces dimensionsand demonstratethe interactions between three mediators.  Since the mediator has two classes, I use logistic regression to identify exposure-mediator interaction and mediator-outcome relationshipfor ITT and PP respectively and compare modelresults.Then direct confounding adjustment is applied to discover the causal relationship between treatment and outcome adjusted by mediators and baseline confounders.  In particular, for PP group, I use a weighted regression method which upweights people who don’t switch, whileITT group uses the usualregression.  However, direct method assumes an underlying model and might not work well when the covariate balance is not good.Consequently, I also applyCMAverse package to do a simulation-based mediation analysis with a categorical mediator
+
+##### **Shuhong Xiang**
+
+***The differencein differencefor testing the causal effect of MCL/RCL in Veterans on CUD (cannabis use disorder)***
+
+Cannabis use disorder (CUD) is a popular and controversial issuein the U.S.In this project, we studied how the medical marijuana laws (MML) and recreational marijuana laws (RCL) affect the CUD in Veterans in50 states and the District of Columbia.VA data was usedfor the whole analysis.The Difference in difference method was applied for analyzing the CUD appearance tendencyfrom 2005 to 2019 depending on the five law change situations: none all the time, from none to MML, from none to MML then RCL, MML all the time, and from MML to RCL.With the comparisons among the five groups, the “none” groups showed that the CUD would grow as the year increased. The same tendency appeared for the other four groups. Overall, since the policies change was not far away from the present further studies on the CUD in veterans are still needed for analysis. 
+
+##### **Jingyi Zhang**
+
+***Mediation effect of white matter hyperintensities in the relationship between age and cognitive reference abilities***
+
+White matter hyperintensities are distributed patches of augmented lucency commonly found inT2-weighted MRI scans for older people. Clinically, white matter hyperintensities are related with cognitive decline and may contribute to the cause of dementia. On the other hand, a highprevalence of white matter intensities observed in older people may indicate a harmlesscomorbidity of aging. Thus, the main goal is to investigate the relationship of white matterhyperintensities and cognitive abilities with respect to age. Three types of cognitive reference abilities are considered based on previous research: memory, language, and executive functionsor processing speed.The hypothesis states that the white matter hyperintensities mediate therelationship between age and cognitive abilities. Mediation analysis is performed with the totalwhite matter hyperintensities as a single mediator as well as regional white matter hyperintensities as multiple mediators. The mediation effect of total white matter hyperintensitiesis significant in all three cognitive abilities. Occipital lobe showed the most mediation effect inall three cognitive abilities. We further investigate whether the diagnosis group moderate the meditation by comparing mild cognitive impairment group with cognitive normal group, Alzheimer's disease group with mild cognitive impairment group. There is no significant moderation effect of the diagnosis group in the mediation path. These results support the hypothesis that white matter intensities indeed mediate the relationship between age and cognitive abilities. It further helps to clarify the role of white matter hyperintensities in the process of aging. 
+
+
+
+
+<p>&nbsp;</p>
+
+#### **Session 2 Room LL108B: Statistical Genetics and Genetic Epidemiology**
+
+<hr style="border:2px solid gray"> </hr>
+
+##### **Amanda Tsai**
+
+***Colocalization of Genetic Variants from Complex and Molecular Traits***
+
+Late-onset Alzheimer’s disease is a prevalent age-related polygenic disease that accounts for50–70% of dementia cases. Identifying genetic risk factors shared between Alzheimer’s diseaseand other molecular traits, such as gene expression, can help with the understanding of theetiology of the disease and potentially detect new therapeutic targets. Colocalization analysis isan integrative analysis technique that aims to identify genetic variants introducing simultaneousphenotypic changes in multiple molecular and complex traits. This project aims to understandand utilize multiple colocalization analysis methods to identify shared causal genetic variantsbetween brain tissues and Alzheimer’s disease.Using simulated data, benchmark results for three current colocalization analysis methods,fastENLOC, eCAVIAR, and SuSiE-coloc, were produced and the methods were compared basedon false discovery and false negative numbers, power and signal cluster size. Results indicatehigher power and smaller cluster sizes for SuSiE-coloc, but high numbers of false negativesacross the board. Colocalization analysis was then performed on Alzheimer’s disease GWAS(genome-wide association study) and brain tissue eQTL (expression quantitative trait loci)summary statistics. Credible sets that potentially capture the shared causal genetic variants wereidentified, indicating a possible complex genetic relationship between Alzheimer’s diseases andthese brain tissues.The high number of false negatives generated for all three colocalization methods leads to furtherdiscussion on the sources of these errors and ways to capture the signals. The limited number ofdiscoveries also suggest a need for more accurate methods in future integrative geneticassociation analyses.
+
+
+##### **Ling Tuo**
+
+***Prediction models of  Alzheimer’s Disease with UK Biobank data***
+
+Alzheimer's disease is a heterogenous disorder that has   no  precise cause and  treatment presently. Family  history  including  parental and sibling history have been proved to be a significant factor for AD  prediction while the  existing methods have some limitations. LT-F  H is a method conditional on both case–control status and family history under   liability threshold model, which might be  affected by inaccurate family history record. This study aims to   propose a new method with a  higher statistical power and identify more genes related to   AD. Data extracted from UK  Biobank contains family history and    other potentially related variables of 501,493  individuals.  Methods including MICE and  PU learning with different input data are applied to   deal  with missing values and generate genetic risk scores of  Alzheimer's diseases, then genome wide  association study are performed utilizing AD scores as  phenotypes. In addition, matching    is   used to   reduce the bias   caused by confounders. Association results of different approaches are    compared with each other as   well as   LT-F  H   and    generally  MICE performs better than PU learning so far. 
+
+##### **Rona Wang**
+
+***The  role  of  epigenetic  regulator  JMJD3  in  modulating  inflammation  in  macrophages  in periodontitis***
+
+Objectives:JMJD3, a histone 3 Lys27 (H3K27) demethylase, is an epigenetic regulator and has been implicated in the pathogenesis of autoimmune and inflammatory diseases. We investigated the role of JMJD3 in periodontitis andassessed the effect of JMJD3’scatalytic domain(H3K27 demethylase) and itsC-terminal segment in the transcriptional landscapeof macrophages. Methods:Myeloid cells were isolated from 5 pairs of periodontitis-affected andhealthy gingival tissue by positive selection usingCD11b immunomagnetic beads. JMJD3expressionwasalso examined in macrophagesderived from peripheral blood of patients with type 2 diabetes mellitus (T2DM)(n=8)anddiabetes-free controls(n=6). The domain-specific role of JMJD3 in modulating inflammatory pathways in macrophages was assessed by administration of JMJD3 wildtype and H3K27  demethylase  mutant  JMJD3  vectors.  RNA  sequencing  and  quantitative real-time PCR wereperformed to identify differentially regulated genes. Pathway and protein-protein interaction analyses wereused to identify effector pathways.Results:We found a significantly lower expression of JMJD3 in myeloid cellsfromperiodontitis-affected  sitescompared  to periodontally healthy sites(2-fold  change,  p<0.05). Our  ex-vivo studies  showed  inactivation  of the IRF4-JMJD3  axis  in  macrophages  derived  from peripheral blood  of  T2DM  patients  indicating  a  possible  mechanistic  role  of  JMJD3  dysregulation  in increasing susceptibility to periodontitis in T2DM. The H3K27 demethylase mutant JMJD3 vector induced inactivation of NF-κB, suggestingan H3K27 demethylase-independent role of JMJD3 in controlling inflammation in macrophages. PPARA activation by JMJD3 was dependent on JMJD3 histone demethylase activity, indicatinga distinct role of the C-terminal segment and the JMJD3 catalytic domain in orchestrating the anti-inflammatory macrophage phenotype. Conclusion:JMJD3  playsa  direct  role  in  epigenetic  re-programming  of  macrophages  in inflammation  and  could  be  a  potential  target  for  epigenetic  modulation  of  macrophages in  the treatment ofperiodontitis. 
+
+##### **Xinyi Wang**
+
+***Integrate multi-omics data to estimate the intensity of tumor immune response***
+
+This study aims to study the methods for estimating immune response intensity of malignant tumors using genomic multi-omics data, and to explore the improvement scheme of integrating multi-omics data to predict the immune response. Meanwhile, survival analysis was also performed to evaluate the tumor markers identified in this study. The results will provide reference for future clinical studies.This essay analyzes the three most commonly used methods for estimating tumor immune infiltration level based on gene expression profile data: ssGSEA, TIMER and CIBERSORT. The differences in their methodology as well as their advantages and disadvantages are also discussed. By analyzing the distribution of the estimated value and the correlation among the estimated value, the differences and effectiveness of the three methods in practical application are evaluated, and suggestions for improvement are proposed.Also, the tumor infiltration of SKCM was calculated using RNA-seq data from the TCGA public database with the most effective estimation method ssGSEA. Regularized linear regression method is used to identify methylation sites that are highly correlated with tumor infiltration ofdifferent immune cells. The efficacy of the selected methylation sites was evaluated with survival analysis using clinical data.
+
+
+
+
+
+<p>&nbsp;</p>
+
+#### **Session 2 Room LL109A: Health Economics and Social Behavior Research**
+
+<hr style="border:2px solid gray"> </hr>
+
+##### **Zexu Yuan**
+
+***Evaluating the impact of telemedicine on chronic disease outcomes***
+
+Ata population level, hypertension is the most important risk factor for premature cardiovascular disease. On a global basis, hypertension accounts for approximately 50% of all strokes and ischemic cardiac events, hypertension remains the leading cause of cardiovascular disease worldwide. With high technology developing, virtual interventions were implemented in hypertension by monitoring blood pressure of patients.The Center for Behavioral Cardiovascular Health at Columbia University Medical Center has been at the forefront of developing many virtual interventions (e.g., home blood pressure telemonitoring, MyChart) to improve the management of hypertension. Thisresearch aims to see if there is an effect ofdifferentvirtual interventionsor combination of various virtual interventionson improving the management of hypertension.We will use a parallel-group cluster randomized trial (CRT) design with a baseline period to compare the 1-year effect of the Supported SMBP intervention (early implementation) with usual HTN care (waitlist control). Clustering will occur at the clinic level, with primary care providers and patients nested within clinics. We selected clinic-level clusteringbecause there were concerns of contamination and perceived equity if randomization occurred at the provider or patient level. Medical directors and health system leaders are willing to have clinics randomized to early versus delayed implementation. To assess sustainability, we will examine data collected during the maintenance period (i.e., 18-38 months after implementation) for early implementation clinics.During this later time period, we will also reassess implementation outcomes in delayed implementation clinics. 
+
+##### **Caroline Andy**
+
+***Income-Based Disparities in Medicare’s Merit-Based Incentive Payment System***
+
+Research Objective: Medicare’s Merit-based Incentive Payment System (MIPS) is the largest value-based payment program in U.S. history, impacting payment for more than 98 percent of U.S. physicians. Recent research has found that physicians serving predominantly low-income patients may have a disproportionately higher risk of financial penalties. In this research, I examine socioeconomic disparities in the relationship between MIPS performance and quality across clinical process and outcome measures. Study design:In this retrospective cohort study, 2018 Medicare claims data were used to construct three process and three risk-adjusted outcome measures of physician-level care quality. These measures were merged with Physician Compare data on physician performance in MIPS and collapsed into practice-level metrics. The final sample contained 4,699,959 patients attending 26,013 practices in the U.S. Wilcoxon rank-sumtestsand regression-based methods were employed toexamine differences in process and outcome measures between dually eligible and Medicare-only patients treated at practices with similar MIPS performance.Thecorrelation of practice equity and MIPS performance was also assessed by comparing overall and within-practice variation in care quality between duals and non-duals across MIPS categories.Results: Across all MIPS categories, process measure performance was consistently worsefor duals thannon-duals. For each process measure, duals who received care atthe best scoring practiceshadcomparable performance to non-duals receivingcare at the worst scoring practices.For both dual and non-dual eligible beneficiaries, higher MIPS scores were correlated with better performance for all process measures, but not for outcomes. The rate of diabetes hospital admissionsamong dualsincreased with MIPS performance. Linear regression modeling approaches found that the expected improvement in nearly everymeasureas MIPS scores risewas lower among duals than non-duals, suggesting thatdual status is an effect measure modifier of the relationships between MIPS score and most clinical measures. The overall disparity between dually eligibleand Medicare-only patientswas similar across categories of MIPS performancefor the processmeasures and increased across MIPS performance categories for the outcome measures. The within-practice inequitywas consistently greatest for the highest MIPS-scoring practices, both on an absolute scale and as a percentage of the overall inequity. Conclusion:The disparity in clinical measuresbetween duals and non-duals is driven primarilyby within-practice variation in the highest MIPS-scoring practices. To incentivizeimproved care management and reduce unnecessary healthcare utilization, MIPS maybenefit from including 
+
+##### **Chong Li**
+
+***Impacts from Child Care, Health Insurance, and Public Benefit Program Design on Disposable Family Resources in the State of New Jersey***
+
+The “benefit cliff” refers to the phenomenon when public welfare programs have designs that let recipients earning additional income to have a net loss of financial resources, due to loss of benefits (both tangible and intangible) created by employment choices. Households’ inadvertent losses of financial resources can lead to potentially serious public health consequences for underage children, especially those who are first-generation immigrants, racial minorities and of low-socioeconomic status. This study first employs a combined-sample multiple imputation approach, using data from Survey of Income and Program Participation (SIPP) and American Community Survey (ACS), both sponsored by U.S. Census Bureau, to construct anonymized microdata on individual households in the state of New Jersey. The data is then plugged into the Family Resource Simulator (FRS) that performs household-level microsimulation to model potential benefit cliffs faced by individual families. Through aggregating the microsimulation outcomes, the study is able to identify common patterns of benefit cliffs facing different household types. The findings would allow legislators to implement safety net policies that better respond to the needs of families and to secure a healthier, more equitable New Jersey.
+
+##### **Tianyi Liu**
+
+***Alumni Tracking Data base Analytics Package in the One Health Network***
+
+ICAP at Columbia University has partnered with University of California, Davis on the One Health Workforce project, with the goal of empowering South-East Asian OneHealth University Network (SEAOHUN), OneHealth Central and Easter Africa (OHCEA), and their member universities to develop and deliver sustainable training and programs that equip professionals with multisectoral competencies to address complex health issues.ICAP is responsible for technical aspect of the project, including establishing systems, policies, and procedures to assess and track multisectoral workforce placement, performance, and impact. In this project, I used R to builda customized Student/GraduateDatabase and Analytics Dashboard to manage OneHealth workforce data and track the performance of OneHealth graduates in the workforce.Alumni Tracking Database was built based on a survey, interviewing One Health alumni their experience in respective programs. Answers were stored in a CSV file, which was later downloaded and analyzed.Analysis of survey results provided useful information of the whereabouts of OneHealth alumni. Question regarding course design and skills provided insightful ideas for future directions and ways of improvements of courses.The use of R allows minimal maintenance and the dashboard will be updated by updating the source data file. Moreover, the online authenticated Rshiny platform supplies interested party an interactive platform, where users can pinpoint, select and interact with different graphs and plots. This online platform can be accessed through url, which ensures accessibility for users who do not share comparable coding skills.
+
+
+
+
+<p>&nbsp;</p>
+
+#### **Session 2 Room LL109B: Special Topics**
+
+<hr style="border:2px solid gray"> </hr>
+
+##### **Zehua Liu**
+
+***Association between Clinical Variables and Probability of Death***
+
+The data of this study comes from Nanfang Hospital of Southern Medical University located in Guangdong, China. Clinical and demographic variables such as age, blood sugar, and serum potassium were collected from 241 hospitalized patients, all women. Theclinical variables were measured once every day until the patient dies or until the study ends (6 months). The average of each clinical variable is taken for each patient. The objective is to predict the probability of death given the clinical and demographic variables. The dependent variable “Death”is a binary variable: patients who have died during the 6-month period of study are coded as 1 and patients who survivedare coded as 0. The 27 independent variables have a low correlation. Since there are too many independent variables, forward and backward elimination are used for variable selection. In addition, physicians’ decision on variable selectionis considered. Several logistic and penalized logistic regression models aretrained; the model with the highest AUC is selected to be the final model. From the logistic model trained, age, serum potassium, APS-III mortality score, platelet count, and pH of blood are significant predictors at the 5% level. Furthermore, patients with gynecological conditions and patients with comorbidities are at higher risk of death. The final model used for prediction is the Ridge penalized logistic regression model, with the best tunning parameter 𝜆= 0.02 and AUC 0.8. 
+
+##### **Danyang Gui**
+
+***Rakai Cohort Community Study (RCCS) Round 19 Cross-Sectional Analyses on Transitions for AdolescentandYoung Adults (AYA)***
+
+The study focuses on the puberty onset age for AYA between 15-24years oldin the Round 19  RCCS  dataset.  The  first  aim  is  to  provide  descriptiveson  all  transitions  (puberty,  schooling, sexual initiation, circumcision). The result shows that women reach puberty earlier than men. Men are  more  advantageous  for  higher  education  than  women.  And  women  initiate  their  sexual behaviors  earlier  than  men.  The  second  aim  is  to  assess  the  associations  between  puberty  and schooling, sexual initiation, circumcision through logistic regression and cox proportional hazard model. The models suggest that puberty onset age and school enrollment are positively correlated. The effect of puberty onset age on school  enrollment is stronger for women than for  men. Both women and men  are less likely  to be sexually initiated if they reach puberty later. And men are less likely to be circumcised if they reach puberty later. For the third aim, the associations between puberty and risk behaviors (e.g., inconsistent condom use, alcohol before sex, multiple sex partners, transactional  sex)  as  mediated  by  schooling,  sexual  initiation,  and  circumcision  are  explored. Sexual initiation age and circumcision age are the two potential mediators between puberty onset and some risky behaviors.
+
+##### **Zhiye Lou**
+
+***Evaluation of liability judgment models for online car-hailing***
+
+Introduction The Didi Global company used to use one model to do the liability judgment for drivers, however, to increase the accuracy of the judgment, it was planning to use eight different models from eight different scenario levels instead of one model. This project not only aims to evaluate if using eight different new models is better than using the old one model, but also to evaluate if each of the eight models is getting better through iteration at each of the three-time points.MethodsThis project randomly selected 15355 cases from the liability judgment models intotal for humans to judge the cases again, then used the results from two sources to build confusion matrixes to get the precision rates and recall rates for the models. The recall rate is used as the main evaluation of the model, and the test of hypothesis for the difference in proportions is used for comparison. The sample size is calculated for both the “liability cases” and the “non-liability cases”. Estimation of population proportion is derived from the cluster sampling method.ResultsA total of 3324 cases from the old model were included. The recall rate for the old model was 65%, and the precision rate was 54%. A totalof 4532 cases from the first-generation eight models were included, the overall recall rate was 72% and the precision rate was 63%. A total of 4831 cases from the second-generation eight models were included, the overall recall rate was 79% and the precision rate was 67%. A total of 4725 cases from the third-generation eight models were included, the overall recall rate was 84% and the precision rate was 72%.Conclusion and discussionFirst, the new models were better than using the old model at a 90% significance level for both recall rate and precision rate. Besides, the overall performance of third-generation new models was better than that of the second-generation new models at a 90% significance level, and the overall performance of the second-generation models was better than that of the first-generation new models at a 90% significance level. However, 2 of the second-generation models are not better than the first-generation models at recall rate, and 3 of the third-generation models are not better than the second-generation models at recall rate. For future work, the project could use the Bayesian prior distribution in calculating sample size to save potential labor costs.
+
+##### **Shibei Xu**
+
+***UNFPA Population Data Platform***
+
+The severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) pandemic is one of themost challenging and defining public health issues in recent decades. Since its initial outbreak onDecember 1st, 2019, there has been a considerable amount of studies focused on the risk factors,treatment, and features of COVID-19. However, people were having limited knowledge andinformation about this disease when in the summer of  2020. This paper summarized myinternship experience working on the COVID-19 data during the initial wave of the pandemic.The first part of the paper focuses on the quality assurance of IPUMS data using paired t-test andWilcoxon test; Then I will briefly introduce my National Covid-19 Population VulnerabilityDashboard in the platform of ArcGIS; Finally, I will explain my work on the output andformatting on the Demographic and Health Surveys data.
+
+
+
+
+
+<p>&nbsp;</p>
+
+#### **Session 2 Room LL110: Machine Learning in Biostatistics**
+
+<hr style="border:2px solid gray"> </hr>
+
+##### **Jungang Zou**
+
+***Variable Selection for Multiply-imputed Data: A Bayesian Framework***
+
+Multiple  imputation  is  a  widely  used  technique  to  handle  missing  datain  large observational studies. For variable selection on multiply-imputed datasets, however, if   we conductselectionon  each   imputed dataset  separately,   different  sets   of important variables may beobtained. MI-LASSO, one of the most popular solutionsto this problem, regards the same variable across all separate imputed datasets as a group  variable  and  exploits  Group-LASSO  to  yield  a  consistent  variable  selection across  all the multiply-imputed  datasets.  In  this  paper,  we  extend  the  MI-LASSO model into Bayesian framework and utilizefive different Bayesian MI-LASSO models to perform variable selection on multiply-imputed data. These five models consist of three  shrinkage  prior  based  and  two  discrete  mixture  prior  based  approaches.  We conduct  a simulation study  investigating the  practical characteristics  of each  model across various settings. We further demonstrate these methods via a case study usingthe multiply-imputed data from the University of Michigan Dioxin Exposure Study.
+
+##### **Xinxin Lin**
+
+***Bioinformatics and Statistics Course Design onPCA and Phylogenetic Trees***
+
+To enable students of different orientations to link biology and life sciences with bioinformatics and data analysis for better interdisciplinary teaching, we have chosen to use the publicly available 1000 GenomesProject data and perform principal component analysis and phylogenetic tree construction on the data. The ultimate goal was to enable students without basic knowledge of statistics to understand PCA and to master the methods of filtering and analyzing the data.The richness of the1000 Genomesdata can provide difficulty forthe analysis. When we have a large data set we need to filter and identify patterns among a large number of variables. Whole-genomedata hasa large number of loci that need to be first filtered and selected, then analyzed with PCA, and finally visualized and mapped. Among all the loci, we selected one of the 218 pieces of loci information as a sample for PCA. The construction of phylogenetic trees can be used to visualize the relationships between organisms, individuals, and genes.The PCA result presented the distribution information of the five populations. Due to the reduced sample size by selecting only 218 loci information, the distribution information of various populations was successfully obtained under the force of two principal components. Because the sample individual gene information was obtained from the original1000 Genomesdataset,it could not be shown in the distribution plot. If students have their individual locus information, they can apply the same method and map their position in the 1000 Genomesby themselves after class without sharing the information. The phylogenetic tree section is designed for students to understand the principles of genetic distance calculation and to learn the algorithm and code to build a phylogenetic tree. Eventually, the correlation between genes will be 
+2demonstrated by a circle tree. The circle tree is deficient in cross-sectional comparisons but still provides access to information about roots and nodes in the 1000 Genomes data.The significance of this project is to bridge the gap between education and employment and education between different disciplines. Students will be able to break through the limitations of the biology major, connect the results to bioinformatics and statistics and learn to use data analysis to analyze experimental results or experimental data. Students will learn and master statistical analysis and visualization methods to analyze data or experimental results. In addition, students will develop a multidisciplinary approach by combining biology, statistics, and bioinformatics content.
+
+##### **Zhourong Li**
+
+***Survival Analysis of Stage II Colorectal Cancer Patients using Lasso-Cox Model and Random Survival Forest Model ***
+
+Colorectal cancer is the third most common cancer that has been diagnosed in the United States. From 2012 to 2016, it increased every year by 2% in population younger than 50 and 1% in people 50 to 64. In this project, my role is todevelop Lasso-Cox Model and Survival Random Forest Model in R using 117Stage II Colorectal Cancer Patientsdata.Theprimary goal of this project is to evaluate and compare  the prediction  ability  of10  years  survival  outcome  using Lasso-Cox model  and  Random  Survival  Forest  model.I learned  about lasso cox  model, random  forest model and  survival  analysis  from  my  majoring  coursesand  my previous research. The resultsof my project have shownRandom Survival Forest performs better than the Lasso-Cox model usingClinical data, Biomolecular Data and  two  data  combined  interms  of predicting 10-yearsurvival  outcomes.  The performancewas evaluated through ROC curve and AUC values. Mystudyresults have shownRandom Survival Forest performs better than Lasso Cox both in train set and test setofthree different datasets.Thisproject also shows that both modelshave the highest prediction accuracyusing only Biomolecular data.While using the combined dataset didnot result higherprediction accuracy
+
+##### **Bin Yang**
+
+***Identifying Heterogeneity of Treatment Effect Using Causal Forest***
+
+The evidence of superiority of antidepressant medication over placebo for Major Depressive Disorder (MDD) patients is modest.  Pre-treatment The  evidence  of  superiority  of  antidepressant  medication  over  placebofor Major Depressive Disorder (MDD) patients is modest.  Pre-treatmentEEG signals in alpha and theta frequency band have demonstrated some association with anti-depressant response.  Causal forests provide a pow-erful  non-parametric  consistent  estimation  for  heterogeneous  treatmenteffects.  We leverage the resting state, pre-treatment EEG recordings, aswell as the clinical, demographic variables measured from a large multi-site, double-blind randomized controlled clinical trial EMBARC to esti-mate the treatment effect of sertraline.  We extract the relative theta andalpha band power from the EEG recordings, adjust for missing outcomeusing inverse weighting of propensity of missingness and missing covariates using multiple imputation.  We then train causal forests and detect a significant average treatment effect and some EEG bio-signatures modifying the treatment effect.
+
+
+
+
+
+<p>&nbsp;</p>
+
+#### **Session 2 Room LL208B: Health Survey and Health Policy Research**
+
+<hr style="border:2px solid gray"> </hr>
+
+##### **Shuning Chen**
+
+***Cost-Benefit Analysis of Introducing Rotavirus Vaccine intothe National Immunization Program in China***
+
+Background:Globally, rotavirus is one of the leading causes of severe acute gastroenteritis and mortality among children under the age of 5 years with a significant economic cost. Vaccination is the most effective method to prevent and control RVGE, yet rotavirus vaccines are still only included in the private market in China currently. This study aimed to assess the cost-benefit of introducing the current three-dose rotavirus vaccine into the National Immunization Program (NIP) in China.Methods:A decision tree Markov model was constructed to evaluate the cost-benefit of universal immunization of 3 doses of rotavirus vaccine on a 2017birth cohort of Chinese children.Introducing the rotavirus vaccine RotaTeq into the NIP was compared to inclusion of the vaccine only in the private sector. Rotavirus diarrhea related costs were estimated from societal perspective using formal health care costs, informal health care costs, and non-health care costs. Costs of the universal vaccination program included vaccine price, vaccine wastage, vaccine administration costs, and indirect costs. All costs were discounted at 3% per year andconverted from 2017 Chinese Yuan (CNY ¥) to 2017US Dollars (USD \$) using the 2017 exchange rate.Results:For the 2017 birth cohort of Chinese infants, enrollment of RotaTeq in the NIP was estimated to prevent 6,227,407 cases of rotavirus infections, 147,590 cases of severe RVGE required hospitalization and 772 deaths, withnet savings of \$0.55 billion in total societal costs related to RVGE. Based on the current price of RotaTeq (\$41.48), costs of the universal vaccination program would be \$2.25 billion with a net present value (NPV) of -\$1.70 billion and a benefit-cost ratio (BCR) of 0.24. The BCR would be increased to 0.88 by setting the price of rotavirus vaccine at the maximum price of vaccine in the current Chinese routine immunization schedule ($4.76).Conclusions:Introducingrotavirus vaccine into the NIP in China would have significant costs from societal perspective at the current private market price. However, it is likely to be cost-saving through bulk procurement once the vaccine is enrolled in the NIP and the vaccine price is decreased.
+
+##### **Chen Li**
+
+***A hierarchical analysis of the growth of the children as measured by the distance between the pituitary to pterygomaxillary fissure***
+
+My practicum is concerned with the growth of the children as measured by the distance between the pituitary to pterygomaxillary fissure. The aim is to investigate if there is a relationship between this distance and age. If so, what is the nature of this relationship. After running several multilevel models, I have found that there is a positive linear relationshipbetween this distance and age. Further, gender, as a level-2 measure,also has an effect on this distance.The data set only has 11 girls and 16 boys, so in further study, I would collect more dataand do a power analysi
+
+##### **Jiaqi Li**
+
+***US Injury Deaths Analysis***
+
+A client from the medical industry would like to know statistics regarding injury deaths in the us. The project is to analyze and identify trends in the US injury deaths datafrom 2000-2016. Specifically, determine if there are any  trends  with the injury  deaths  (by  intent  and  mechanism)  with  age  group  and sexand  what  public  health implication can be inferred. The data source is the government data found in data.gov. The project is divided into two part. The first part is exploratory analysis including analyzing trend of rate of deaths by gender, age and race. The second part is to build a linear regression model. This part includes checking skewness and multicollinearity, finding out confounder variables and interaction terms.To test the final model, the diagnostic plots are used to prove the goodness of the model.The final statistical model indicates that race, gender and age are variables which make significant differences in number of US injury deaths.The average difference in predicted total number of US injury deaths between male and femaleis 53%. Poisoning has been the biggest killer of US male since 2013.Compared to people under 15 years old, elderly people over 75 years old has 47% lower number of deaths and people from 25-44 years old has 216% greater number of deaths.For the elderly, even though the number of deaths is not that high, but the rate of deaths has been going up, fall is their biggest concern.
+
+##### **Chen Mo**
+
+***Evaluation of first-time punishment exemption for novice drivers***
+
+Introduction The Didi Chuxing Technology Co. noted that penalties canaffect novice drivers’ motivation and lead to a decrease in the quality and quantity of service. The company aimed to evaluate if the first-time punishment exemption strategy for novice drivers can lead to an increase in drivers’ next monthly retention rate and drivers’ total service hours.MethodsData of 620,224 novice drivers of China between Jan 1, 2021, and May 1, 2021, was collected and followed for 2 months. Novice drivers whose total service hours for the first month is less than 30 hours were excluded since the company mainly focused on the novice drivers who had longer service time. Weights of each stratum were adjusted to avoid Simpson’s paradox,and t-test and z-test were used to compare the difference between unpunished and punished novice drivers.Results234,233 out of 278,971 unpunished novice drivers were retentive and 290,162 out of 341,253 punished novice drivers were retained to drive for the following month. The adjusted drivers’ next monthly retention rate and drivers’ total monthly service hours were 85.10% and 82.59 hours for the unpunished novice drivers, and 84.16% and 74.45 hours for the punished novice drivers. Novice drivers’ next monthly retention rate will increase by 0.94% and novice drivers’ total service hours can grow by approximately 10.93% Discussion Novice drivers’ next monthly retention rate and novice drivers’ total service hours will increase if the first-time punishment exemption strategyfor novice drivers can be conducted. Moreover, the project could use the regression model to analyze some other variables like driving experience and cities for further analysis.
+
+
+
+
+
+
+<p>&nbsp;</p>
+
+#### **Session 2 Room LL209A: Cancer Research**
+
+<hr style="border:2px solid gray"> </hr>
+
+##### **Yue Liu**
+
+***Risk Factors for Immune Checkpoint Inhibitor Pneumonitis in Non-small Cell Lung Cancer Patients***
+
+Immune checkpoint inhibitors (ICIs) are a novel class of immunotherapy drugs that have shownremarkable efficacy in treating non-small cell lung cancer(NSCLC)patients, however, ICIs can also trigger life-threating immune-related adverse events, such as checkpoint inhibitor pneumonitis (CIP).Therefore, to prevent serious adverse events from happening, it is essential to understandhighrisk factors for CIP. In this study, we retrospectively reviewed the medical records of NSCLC patients who had received ICIs targeting programmed cell death 1 (PD-1)from The First Affiliated Hospital of College of Medicine, Zhejiang Universitybetween May 2018 and December 2020. Logistic regression and cox regression wereappliedto assess the potential high-risk factors includingpatients’ baseline information and clinical characteristics (specific clinical characteristics were selected by clinicians). Among the149 patients, 18 had developed CIPs (12.1%). Results from univariate logistic regression analysis showed that PD-L1 expression ≥50%is positively associated with incidenceofCIP(OR=5.749, p-value=0.036), while interleukin-8 (IL-8)(pg/ml)and globulin(g/L) arenegatively associated withincidence of CIP(OR=0.818, p-value=0.045; OR=0.862,p=0.0123).Results from univariate cox regression analysis showed treatment lineis positively associated with incidence of CIP (HR=3.390, p-value=0.032), while lymphocyte count(×109/L)and globulin(g/L)arenegatively associated with incidence of CIP (HR=0.275, p-value=0.018; HR=0.816, p=0.0306).
+
+##### **Yihan Feng**
+
+***Adverse Events Toxicity Evaluation and Visualization Model for a Non-small Cell Lung Cancer Randomized Clinical Trial***
+
+Newtreatment strategies developed over the last few years in the field of oncology, which allowedlonger survival durations. Meanwhile,the quality of life, specifically experienced adverse events (AE) toxicity and duration,of patients shouldalso an important component to evaluate therapies. Although Quality-adjusted Time Without Symptoms of disease or Toxicity (Q-TWiST) and Restricted Mean Survival Time (RMST) analysis methodsareusually applied to evaluate both benefits and risks, they can also be usedalternativelyto assess AE toxicity and duration. This study aimedto perform statistical comparison of AEtoxicity and time between treatment and control groups with both quantitative,modified RMSTanalysis, and graphical, modified Q-TWiST plot, representationsin a phase 3 Non-small Cell Lung Cancer randomized clinical trial. 252 patients were followed up for 42 months from 2015 to 2018. Patients’ Progression Free Survival (PFS) date, AE toxicity degree, AE start and end date were collected. The PFS time was partitioned into four statuses:  TWiST, time after randomization and before progression without any toxicity; and three times after randomization and before progression during which patients experienced any grade 1 to 3 AE, respectively. Each state’s restricted mean duration was estimated with 95% confidence interval and p values in RMST analysis, andvisualized by the area between the Kaplan-Meier curvesin Q-TWiST plot. According to RMST analysis, there wasno statistical difference between treatment and control groups in PFS or AE duration. In the future, the model could be further developedto assessspecific AE categories and labels for other clinical trials. 
+
+##### **Vasili Fokaidis**
+
+***Identification of Cohorts of Triple Class Refractory and Triple Class Exposed(TCR/TCE) Patients Treated with Standard of Care for a Synthetic Trial in Multiple Myeloma***
+
+Introduction: Multiple Myeloma(MM)is a rare canceraffecting roughly 30,000 Americans each year. Standard of care (SOC) for these patients is currently limitedto alkylating agents and steroids, however new therapies have shown to increase overall survival in MM patients.Materials and Methods:To identify these patients and generate cohorts for a synthetic trial testing treatment effect between TCR and TCE patients, we used an EHR oncology database and created a data pipeline using the R programming language. This pipeline contained granular inclusion and exclusion criteria that allowed us to identify the respective cohortsfor each arm.Results: From ~12,500 MM patients,~30 were identified for the control and intervention arms to measure the treatment effect of these new interventions against current SOC. Additionally, it was the first pipeline successfully developed for a synthetic trial in rare disease on the RWE Oncology team at Pfizer that would allow for future analysis and be used as aframework for future cohort identificationin rare disease.Discussion and Further Directions: Thisstudy showed that synthetic trials are feasible in rare disease, such as MM,and may be more ethical to conduct for diseases where patients have poor prognosis or short life expectancy. More specifically, the next steps for this study will be to run the analysis for the synthetic trial and see if thesenew therapiessignificantly improve overall survival compared tocurrent SOC in MM, and if so, how these new interventions can change clinical practice.
+
+##### **Yubei Liang**
+
+***Compare Precision, Accuracy,and Time Efficiency of Tattoo-based Setup and Align RTTattooless and “Moldless” Surface Imaging Setup for Prostate Radiation Therapy***
+
+Introduction For decades, permanent tattoos have been part of the standard of care in radiation therapy to aid with daily patient setup prior to imaging and treatment.This study focuses on comparing a new tattooless and moldless setup for prostate radiation therapy with the traditional tattoo-based patient setupin terms of accuracy and precisionas well asthe setup time. Materials and methods36patients who were having radiotherapy to the prostate wereincludedinthis study. 18 patients were selected for a group setupusing the AlignRT and CNC,which isthe custom mold. 8 patients were usingthe CNC alone. And 10 patients for the traditional tattoo-based setup group. The medianshiftrecorded by CBCT imagingwasused for comparing the accuracy, and the variance of shifts wasused for comparing precision. Results AlignRT is better than tattoo-based in the absolute LAT axis with both accuracy andprecision, but it performs worse than tattoo-based for the rest of the axes (VRT, LNG, RTN,ROLL, PITCH).Themean setup time of the tattoo-based methodis significantly less than the mean setup time of the AlignRT method. Discussion and further directions. Although the tattooless method sounds more attractive because it leaves no permanent signs on the patient’s body, ithas lower precision and accuracyin general,and a longer setup timecompared to the traditional tattoo-based setup.
+
+
+
+<p>&nbsp;</p>
+
+#### **Session 2 Room LL209B: Clinical Trials**
+
+<hr style="border:2px solid gray"> </hr>
+
+
+##### **Beibei Cao**
+
+***An Exploration and Extension on the Hematopoietic Cell Transplantation Comorbidity Index inPediatric Patients Receiving Allogeneic Hematopoietic Cell Transplantation***
+
+It was previously demonstrated by Broglie et al. that the Hematopoietic cell transplantation -specific comorbidity index (HCT-CI) had limited utility in predicting overall survival for pediatricpatients and may require customized definition for this population. The current study wasdesigned to examine traits of pediatric patient data, analyze the comorbidity impact in thispopulation with the same cohort data and establish new weighted risk scores for risk factorsincluding and beyond comorbidities. Due to the limited sample size, this study explorescomorbidities based on the original definitions and settings. Data were collected from 188pediatric patients who underwent alloHCT. To test model efficacy, the data were randomlydivided into a training set and a validation set. Cox proportional hazard models were employedto derive new risk score weights, the weights were summed and grouped as the new index andthe results were validated. Both overall survival (OS) and non-relapse mortality(NRM) wereused as end points and a hybrid method was applied to calculate the weights. Stepwiseselection was used to identify significant risk factors in a second model. In the model usingindex calculated from comorbidities only, the survival predictions were hardly improved(likelihood ratio of 10.2 versus12.1 for adjusted NRM and likelihood ratio of 24.8 versus 23.2 foradjusted OS). In the model using index calculated from comorbidities as well as other diseaserelated covariates, the survival prediction were substantially improved for overall survival(likelihood ratio of 2.81 versus 2.49 for NRM, 7.92 versus 0.08 for OS; c statistics of 0.68 versus0.63 for NRM, 0.65 versus 0.50  respectively). We hereby identified important comorbidities andextra risk factors worth considering during diagnostic procedure, the information of which arealways known before transplantation. The model also provided verification for the scaling ofweights we predefined for the comorbidities and other risk factors in calculating the final index.
+
+##### **Yining Xiang**
+
+***Feasibility of using electronic health records as external controls evidence for  standard-of-care  treatment  response supporting a Phase  II  single-arm oncologic clinical trials in China***
+
+The use of external control as stringent evidence supporting drug listing at FDA has always been controversial. This report briefly describes the feasibility of  using  electronic  health  records  (EHR)  from  3A  level  hospitals,  as retrospective  standard-of-care  results  supporting  the  approval  of  a  Phase  II clinical trial for a new drug for a rare carcinoma in China. This report will firstly touch on the current situation of using external control arm extracted from retrospective records both in US and in China. It would retrieve on thedevelopment of related policies. Also, the pioneered drug developers  and  statisticians discussed  the  theoretical  feasibility  of  this operation these years. Then, this report will describesome concerns in the hand-on case and how the  investigators  could practically  overcome  them. first  concernof  this innovative  application is the quality  of  the  data.  In  other  words,  the completeness of the variables interested, highlighted ones including the gene test for the tumor, the frequency and exact date of imagological examinations. Some possible means of repairs are also discussed. Another concern is if the real-world evaluation of treatment response is comparable to the evaluation in a strict clinical trial. For instance, in a standard clinical trial, if a patient reached complete response (CR) for a specific cancer treatment is evaluated using RECIST1.1 and requires a second imagological examination confirmation 21 days later. However, such operation is not standard for everyday medical operation to save expenditure for the patients. Such differences that interfere and brings bias to our goal of using EHR as an external control arm are briefly discussed in this report. 
+
+##### **Mumei Zhang**
+
+***Sulforaphane Effects on Cognition and Symptoms in First and Early Episode Schizophrenia:  A Randomized Double-Blind Trial***
+
+Objective: Schizophrenia is associated with cognitive dysfunctions and few treatments can address this problem. Research showed that oxidative stress, inflammation and epigenetic modifications, histone deacetylase is involved in the pathophysiology of schizophrenia. Sulforaphane is HDAC inhibitor, so our study is to examine the efficacy and safety of sulforaphane in patients with early episode schizophrenia.Methods:This study is a multi-center double-blinded trial. The subjects are recruited from 4 sites in China and randomized to three treatment groups, high doseSulforaphane, low dose Sulforaphane and placebo group and then follow-upfor22 weeks. primary outcome was the change in the MATRICS Composite score. The secondary outcomes were change in MATRICS Domain scores, PANSS Total Scores and PANSS factor scores, and change in side-effects.   Results:172 subjects were included in this study. Mixed model results showed that there wasno significant difference in MATRICS overall composite score among the treatment groups. However, forthe secondary outcomes, sulforaphane significantly increase the MATRICS battery Domains Score:spatial working memory (F= 5.68, P-value = 0.004),reasoning-problem solving (F= 2.82, P-value= 0.063), and verbal learning (F= 3.56, P-value= 0.031).Conclusion:Although there is no significant Sulforaphane Effects in the primary outcome. We did find significant improvementsin MATRICS domain score,whichsuggestsa positive effect on cognitive functions. 
+
+##### **Fiona Ehrich**
+
+***Parallel Gatekeeping and Adaptive Group Sequential Enrichment Designs: R Shiny App***
+
+Two R Shiny apps were developed implementing clinical trial statistical methodology in the following areas: parallel gatekeeping and adaptive group sequential enrichment designs. The purpose of these tools is to aid biostatisticians in selecting and implementing optimized study designs.Parallel GatekeepingApp:Clinical trials in drug development commonly include multiple efficacy endpoints. Multiple efficacy endpoints may be included in order to assess more than one treatment, treatment dose, disease characteristic, population, or any combination thereof. However, without appropriate adjustment, the testing of multiple hypotheses, or multiplicity, gives rise to an inflated type I error rate. Parallel gatekeepingproceduresarea class oftesting procedures used to adjust for multiplicity and control the type I error rate in clinical trialsby grouping endpoints into families.An R Shiny app was developed to aid users in implementing two commonly used parallel gatekeeping methods: the truncated Holm procedure and the truncated Hochberg procedure.Adaptive Group Sequential Enrichment DesignsApp:Enrichment strategies in group sequential clinical trials may be considered when there is evidence that a treatment may provide greater benefit to a particular subgroup of the patient population (eg, biomarker-positive). Enrichment designs begin by recruiting the full patient population but build in the option to selectively recruit the prospectively-defined subgroup of interest for the remainder of the study based on the results of an interim analysis. An R Shiny app was developed toenable users to conduct customized simulations of adaptive enrichment clinical trials, using a promising zone approach with sample size re-estimation and early stopping for efficacy, facilitating the selection of an optimized study design.
+
+
+
+
+
+
+
+
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+<img src="./images/nyc.jpg" style="length:80%"> 
+
+
+
+
+
+
+
+
+
+
+
