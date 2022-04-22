@@ -322,7 +322,7 @@ Duration of response (DOR) is an important endpoint in oncology clinical trials.
 
 ##### **Lily Wang**
 
-***Longitudinal Analysis of Medication Adherence Data on Patient recover from Cardiovascular Disease with Missing Responses and Missing Covariate***
+***An application for blinded monitoring of pre-defined anticipated serious adverse events during clinical trial conduct***
 
 Patient safety is always top priority in a clinical trial. Therefore, adverse events are collected and monitored in every trial so that if patients are frequently experiencing serious adverse events due to the test drug, the safety data can be unblinded for further analysis so that a decision can be made about stopping the trial before it incurs more harm. Because the US Food and Drug Administration requires reporting of Suspected Unexpected Serious Adverse Reactions (SUSAR), I developed an R Shiny application in collaboration with the safety analysis team at Boehringer Ingelheim that will dynamically monitor anticipated, serious adverse events to aid in SUSAR reporting at the company. The app will accept raw safety data and output tables, listings, and figures that will inform the user primarily on how the observed rates of specific adverse events compare with historical rates, but will also provide additional information on individual subjects’ demographics, laboratory test results, concomitant medications,and adverse event duration and severity. The finished product will ultimately be used internally by the pharmacovigilance teams to dynamically conduct blinded safety reviews of each ongoing trial. 
 
